@@ -4,7 +4,7 @@ En moderne hjemmeside for Fysik Klubben - en lokal forening i Allerød stiftet a
 
 ## 🚀 Se hjemmesiden live
 
-Besøg: [Din GitHub Pages URL kommer her]
+Besøg: [https://sophusand.github.io/Fysik-klubbens-hjemmeside/](https://sophusand.github.io/Fysik-klubbens-hjemmeside/)
 
 ## 📋 Om projektet
 
