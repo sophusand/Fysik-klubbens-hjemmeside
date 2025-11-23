@@ -22,7 +22,7 @@
 
 ### 3️⃣ Manuel Metode - Terminal
 ```bash
-git add .
+git add -A
 git commit -m "Beskrivelse af ændringer"
 git push
 ```

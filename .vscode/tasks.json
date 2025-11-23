@@ -4,7 +4,7 @@
     {
       "label": "Git: Sync alle ændringer",
       "type": "shell",
-      "command": "git add -A && git commit -m 'Auto-commit: ${input:commitMessage}' && git push || echo 'Fejl ved sync - tjek output ovenfor'",
+      "command": "git add -A && git commit -m 'Auto-commit: ${input:commitMessage}' && git push || (echo '❌ Sync fejlede!' && echo 'Tjek:' && echo '  • Er du online?' && echo '  • Er GitHub authentication konfigureret?' && echo '  • Kør: git status' && echo '  • Prøv: git pull --rebase' && false)",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -14,7 +14,7 @@
     {
       "label": "Git: Hurtig sync (auto-besked)",
       "type": "shell",
-      "command": "git add -A && git commit -m 'Opdatering: $(date +%Y-%m-%d_%H:%M:%S)' && git push || echo 'Fejl ved sync - tjek output ovenfor'",
+      "command": "git add -A && git commit -m 'Opdatering: $(date +%Y-%m-%d_%H:%M:%S)' && git push || (echo '❌ Sync fejlede!' && echo 'Tjek:' && echo '  • Er du online?' && echo '  • Er GitHub authentication konfigureret?' && echo '  • Kør: git status' && echo '  • Prøv: git pull --rebase' && false)",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
