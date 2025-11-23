@@ -1,0 +1,44 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Git: Sync alle ændringer",
+      "type": "shell",
+      "command": "git add . && git commit -m 'Auto-commit: ${input:commitMessage}' && git push",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Git: Hurtig sync (auto-besked)",
+      "type": "shell",
+      "command": "git add . && git commit -m 'Opdatering: $(date +%Y-%m-%d_%H:%M:%S)' && git push",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Start auto-sync overvågning",
+      "type": "shell",
+      "command": "bash scripts/auto-sync.sh",
+      "problemMatcher": [],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "commitMessage",
+      "type": "promptString",
+      "description": "Indtast commit-besked",
+      "default": "Opdateret hjemmeside"
+    }
+  ]
+}
