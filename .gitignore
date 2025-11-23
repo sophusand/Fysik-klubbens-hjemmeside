@@ -32,11 +32,10 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# IDE
+# IDE and editors
 .idea/
 *.swp
 *.swo
-*~
 
 # Build outputs (hvis du har build-proces)
 dist/
